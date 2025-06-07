@@ -59,7 +59,6 @@ management:
       probability: 1
 
 # Chaos Engineering
----
 spring:
   config:
     activate:
@@ -75,7 +74,6 @@ chaos:
       rest-controller: false
       service: false
 
----
 spring:
   config:
     activate:

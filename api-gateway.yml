@@ -17,7 +17,6 @@ server:
 # Internationalization
 spring.messages.basename: messages/messages
 
----
 spring:
   config:
     activate:
