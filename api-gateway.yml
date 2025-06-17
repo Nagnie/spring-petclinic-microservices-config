@@ -28,6 +28,7 @@ eureka:
 management:
   zipkin:
     tracing:
+      enabled: true
       endpoint: http://tracing-server:9411/api/v2/spans
   endpoints:
     web:
@@ -39,6 +40,9 @@ management:
     health:
       show-details: always
   metrics:
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
     export:
       prometheus:
         enabled: true
