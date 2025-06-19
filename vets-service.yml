@@ -23,6 +23,10 @@ eureka:
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
 management:
+  tracing:
+        enabled: true
+        tags:
+          app: vets-service
   zipkin:
     tracing:
       enabled: true
